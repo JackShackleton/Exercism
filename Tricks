@@ -1,0 +1,8 @@
+%w (a b c d e)
+will be array with strings
+
+to_i converts to integer
+to_s converts to string
+
+In cases where index is 0, 1, 2, 3 there is no need to use a hash, simply use and array as (salt, suger, butter)
+can be called with 0 10 20

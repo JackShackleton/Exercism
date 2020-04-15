@@ -1,0 +1,2 @@
+exercism submit /path/to/file [/path/to/file2 ...]
+exercism download --exercise=two-fer --track=ruby
