@@ -15,16 +15,19 @@ To get started with TDD, see the `README.md` file in your
 
 class Series
       def initialize(stringOfNums)
-        @numString = stringOfNums
+        @numString = stringOfNums.to_i
+        p @numString
       end
 
       def slices(sliceNum)
         #Init variables
         returnAry = Array.new
-
-          while @numString.empty? == false
-            returnAry += @numstring.shift(sliceNum)
+        p sliceNum
+          while @numString > 0
+            returnAry += @numString.shift(sliceNum)
           end
+
+          return returnAry
       end
 end
       # turn '01234' to ['01', '12', '23', '34'] with (2)

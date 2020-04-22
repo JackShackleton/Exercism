@@ -1,8 +1,13 @@
-%w (a b c d e)
-will be array with strings
+array with strings
+  %w (a b c d e)
+new array with [1, 2, 3, 4]
+  array = Array.new(4) {|e| e = e + 1}
 
 to_i converts to integer
 to_s converts to string
+integer.scan /\d/ converts integer to array
 
 In cases where index is 0, 1, 2, 3 there is no need to use a hash, simply use and array as (salt, suger, butter)
 can be called with 0 10 20
+
+system 'cls'

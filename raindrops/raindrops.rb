@@ -32,7 +32,9 @@ class Raindrops
 
           # p "this is counter: #{counter}"
           if counter == 3
-            "#{number}"
+            return "#{number}"
+          else
+            return message
           end
       end
 end
