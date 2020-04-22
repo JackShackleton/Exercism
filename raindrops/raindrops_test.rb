@@ -8,15 +8,15 @@ class RaindropsTest < Minitest::Test
     assert_equal "1", Raindrops.convert(1)
   end
 
-  # def test_the_sound_for_3_is_pling
-  # #skip
-  #   assert_equal "Pling", Raindrops.convert(3)
-  # end
-  #
-  # def test_the_sound_for_5_is_plang
-  # #skip
-  #   assert_equal "Plang", Raindrops.convert(5)
-  # end
+  def test_the_sound_for_3_is_pling
+  #skip
+    assert_equal "Pling", Raindrops.convert(3)
+  end
+
+  def test_the_sound_for_5_is_plang
+  #skip
+    assert_equal "Plang", Raindrops.convert(5)
+  end
   #
   # def test_the_sound_for_7_is_plong
   # #skip
@@ -78,10 +78,10 @@ class RaindropsTest < Minitest::Test
   #   assert_equal "Plong", Raindrops.convert(49)
   # end
   #
-  # def test_the_sound_for_52_is_52
-  # #skip
-  #   assert_equal "52", Raindrops.convert(52)
-  # end
+  def test_the_sound_for_52_is_52
+  #skip
+    assert_equal "52", Raindrops.convert(52)
+  end
   #
   # def test_the_sound_for_105_is_plingplangplong_as_it_has_factors_3_5_and_7
   # #skip
