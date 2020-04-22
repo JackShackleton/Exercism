@@ -8,27 +8,31 @@ To get started with TDD, see the `README.md` file in your
 
 class Raindrops
       def self.convert(number)
+          #Init vars
           counter = 0
-          if number % 3 == 0
-            p "Pling"
+          message = ""
+
+          if (number % 3 == 0)
+            message += "Pling"
           else
             counter = counter + 1
           end
 
-          if number % 5 == 0
-            p "Plang"
+          if (number % 5 == 0)
+            message += "Plang"
           else
             counter = counter + 1
           end
 
-          if number % 7 == 0
-            p "Plong"
+          if (number % 7 == 0)
+            message += "Plong"
           else
             counter = counter + 1
           end
-          # p "this is #{counter}"
+
+          # p "this is counter: #{counter}"
           if counter == 3
-            p "#{number}"
+            "#{number}"
           end
       end
 end
