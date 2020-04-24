@@ -6,28 +6,17 @@ To get started with TDD, see the `README.md` file in your
 `ruby/series` directory.
 =end
 
-# class Series (stringOfNums)
-#     def self.slices(sliceNum)
-#       p @stringOfNums.split('')
-#     end
-# end
-
-
 class Series
       def initialize(stringOfNums)
-        @numString = stringOfNums.to_i
-        p @numString
+        @numString = stringOfNums.split('')
       end
 
       def slices(sliceNum)
         #Init variables
+      raise ArgumentError if sliceNum > @numString.length
         returnAry = Array.new
-        p sliceNum
-          while @numString > 0
-            returnAry += @numString.shift(sliceNum)
-          end
-
-          return returnAry
+        returnAry = @numString.each_cons(sliceNum).to_a.map(&:join)
       end
 end
-      # turn '01234' to ['01', '12', '23', '34'] with (2)
+
+# turn '01234' to ['01', '12', '23', '34'] with (2)
