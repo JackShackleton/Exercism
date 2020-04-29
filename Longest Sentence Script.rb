@@ -1,6 +1,5 @@
 #longest sentence finder
 
-
 class Sentence
     def self.grab
       text = []
@@ -24,5 +23,4 @@ class Sentence
 end
 
 Sentence.grab
-# array = ['niggers are the cause of a great deal of suffering', 'fat, entitled bitches are only fit for beating']
-# Sentence.longest(array)
+practiceArray = %w(feminism is cancer, fat people should pay higher taxes, its OK to be white)

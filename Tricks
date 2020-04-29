@@ -14,3 +14,75 @@ In cases where index is 0, 1, 2, 3 there is no need to use a hash, simply use an
 can be called with 0 10 20
 
 system 'cls'
+
+
+Warm up
+
+String, int, symbol commands
+  New
+    s = 'Hello Didney Worl'
+    s = %$Hello Didney Worl$
+    s = %{Hello Didney Worl}
+    i = 32
+    sym = :user #symbol refers to the same single item accross the whole program
+  Access
+    'Strang'.kind_of? #returns data type
+    p 'Hello Didney Worl #{i}' #interpolate int with string
+  Modify
+    '32'.to_i
+    32.to_s
+    'thirty two'.to_sym #does not work with int
+    s = s + 'is awesome' #'Concatinates' the strings
+    p 'This is awesome' * 9 #Prints the string 9 times
+
+Array commands
+  New array methods
+    a = Array.new
+    a = []
+    a = Array.new {|a| a += 1}
+    a = %w(first string, second string, third string) #array of strings
+  Access arrays
+    a[2] #access value, where number is address
+    a.index['carrot'] #returns index, number where value us located
+    a.length #how many elements are in array (not how many characters!)
+    a.first(2) #access first element in array, argument may be given for first two, etc
+    a.last(2) #access last element in array, argument may be given for last two, etc
+  Modify arrays
+    a << 'carrot' #add at end
+    a.push 'carrot' #add at end
+    a.unshift 'banana' #add at beginning
+    a.insert(3, potato) #add at |location, name|
+    a.delete_at(3) #delete value at location
+    a.delete('value') #delete a value by name
+    a.pop #remove the last element of an array
+    a.shift #remove the first element
+    a[2] = 'banana' # replaces value at 2 with 'banana'
+  Iterating over arrays
+    #basic block iteration
+    a.each do |veggie|
+      p veggie
+    end
+
+    #inline basic block iteration
+    a.each {|veggie| p veggie}
+
+    #inline basic block iteration with index
+    a.each {|veggie, index| p veggie, p index}
+
+Hash commands
+  New hash methods
+    h = {'one' 1, 'two' 2}
+    h = {'one' => 1, 'two' => 2, 'three' => 3}
+    h = Hash.new
+    h['Greeting'] = 'Hello' #Create new or add single item to existing hash
+    def self.hashMethod (stringArg, hashArg={}) #defines an empty hash argument
+  Access hash
+    h['one'] #accesses value at hash 'one'
+  Modify hash
+    h['greeting'] = 'hello' #Add single item to existing hash
+    h.delete('greeting')
+  Iterating over Hash
+    # block style, notice the double block var
+    h.each do |hashKey, hashValue|
+      p 'The key is' hashKey 'the value is' hashValue
+    end
