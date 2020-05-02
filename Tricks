@@ -86,3 +86,6 @@ Hash commands
     h.each do |hashKey, hashValue|
       p 'The key is' hashKey 'the value is' hashValue
     end
+
+  Other Tricks
+    gsub(/[STUFF TO BE REPLACED]/, '')

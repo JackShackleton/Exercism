@@ -9,47 +9,17 @@ To get started with TDD, see the `README.md` file in your
 class Phrase
 
   def initialize(phraseIn)
-    @phraseIn = phraseIn.USE GSUB
+    @phraseIn = phraseIn.gsub(/[!!&@$%^&\n:.]/, '').gsub(/( '|' )/, ' ').gsub(/[,]/, ' ').downcase
   end
 
   def word_count
-    wordArray = @phraseIn.split(/[\s,]/)
-    p wordArray
+    wordArray = @phraseIn.split(' ')
+    # p wordArray
     finalHash = Hash.new(0)
 
     wordArray.each do |word|
       finalHash[word] += 1
     end
-    p finalHash
-
+    # p finalHash
   end
-
 end
-
-
-
-
-# Given a phrase, count the occurrences of each word in that phrase.
-#
-# For example for the input `"olly olly in come free"`
-#
-# ```text
-# olly: 2
-# in: 1
-# come: 1
-# free: 1
-# ```
-#
-# * * * *
-
-# a = ['aa', 'dd', 'cc', 'aa', 'aa']
-#
-# b = finalHash.new(0)
-#
-# a.each do |v|
-#   b[v] += 1
-# end
-#
-# b.each do |k, v|
-#   p "#{k} appears #{v} times"
-# end
