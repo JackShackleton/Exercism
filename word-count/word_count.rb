@@ -23,3 +23,6 @@ class Phrase
     # p finalHash
   end
 end
+
+
+#select (aka filter) is a form of reduce boolean for each element operated on

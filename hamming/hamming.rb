@@ -9,18 +9,14 @@ class Hamming
     def self.compute(dnaA, dnaB)
         # Init vars
         diffVar = Array.new
-
         if dnaA == nil
           assert_equal = 0
         elsif dnaA == dnaB
           assert_equal = 0
         elsif dnaA != dnaB
-          dnaA.split('')
-          dnaA.split('')
-          diffVar = dnaA - dnaB
-          p ndnaA
-          p dnaB
-          p diffVar
+          p dnaA = dnaA.split('')
+          p dnaB = dnaB.split('')
+          p diffVar = dnaA.reduce(0) {|accum, strand| strand == dnaB ? accum += 1 : accum += 0}
         end
     end
 end

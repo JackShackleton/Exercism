@@ -18,6 +18,9 @@ system 'cls'
 
 Warm up
 
+all caps var is constant
+? result + [sound] : result # inline if else
+
 String, int, symbol commands
   New
     s = 'Hello Didney Worl'
