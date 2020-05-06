@@ -1,33 +1,25 @@
+require 'minitest/autorun'
+require_relative 'resistor_color_duo'
+
 # Common test data version: 2.1.0 00dda3a
-puts "Input first resistor color:"
-r1Color = gets.chomp
-puts "Input second resistor color:"
-r2Color = gets.chomp
+class ResistorColorDuoTest < Minitest::Test
+  def test_brown_and_black
+    assert_equal 10, ResistorColorDuo.value(["brown", "black"])
+  end
 
-firstValue = 0
-secondValue = 0
+  def test_blue_and_grey
+     assert_equal 68, ResistorColorDuo.value(["blue", "grey"])
+  end
 
-colorIndex = {"Black" => 0,
-  "Brown" => 1,
-  "Red" => 2,
-  "Orange" => 3,
-  "Yellow" => 4,
-  "Green" => 5,
-  "Blue" => 6,
-  "Violet" => 7,
-  "Grey" => 8,
-  "White" => 9}
+  def test_yellow_and_violet
+     assert_equal 47, ResistorColorDuo.value(["yellow", "violet"])
+  end
 
-colorIndex.each do |key, value|
-  if key == r1Color
-    firstValue = value
+  def test_orange_and_orange
+     assert_equal 33, ResistorColorDuo.value(["orange", "orange"])
+  end
+
+  def test_ignore_additional_colors
+   #   assert_equal 51, ResistorColorDuo.value(["green", "brown", "orange"])
   end
 end
-
-colorIndex.each do |key, value|
-  if key == r2Color
-    secondValue = value
-  end
-end
-
-puts "#{firstValue}#{secondValue}"

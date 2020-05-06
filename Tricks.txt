@@ -1,3 +1,8 @@
+Postgres gui
+mvc research
+
+
+ https://us04web.zoom.us/j/74415897693?ped=K2NUllCaWVwY1HjYTBUb2FhM3UvQT09
 Clear irb
   system 'cls'
 
