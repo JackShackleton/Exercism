@@ -5,7 +5,7 @@ class ScrabbleTest < Minitest::Test
   # def test_empty_word_scores_zero
   #   assert_equal 0, Scrabble.new('').score
   # end
-  #
+
   # def test_whitespace_scores_zero
   #
   #   assert_equal 0, Scrabble.new(" \t\n").score
@@ -15,12 +15,12 @@ class ScrabbleTest < Minitest::Test
   #
   #   assert_equal 0, Scrabble.new(nil).score
   # end
-
+  #
   # def test_scores_very_short_word
   #
   #   assert_equal 1, Scrabble.new('a').score
   # end
-  #
+
   # def test_scores_other_very_short_word
   #
   #   assert_equal 4, Scrabble.new('f').score
@@ -35,7 +35,7 @@ class ScrabbleTest < Minitest::Test
   #
   #   assert_equal 22, Scrabble.new('quirky').score
   # end
-  #
+  
   def test_scores_are_case_insensitive
 
     assert_equal 41, Scrabble.new('OXYPHENBUTAZONE').score

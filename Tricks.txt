@@ -1,4 +1,4 @@
-
+#Various Notes and Tricks
 
 For Exercism
     exercism submit /path/to/file [/path/to/file2 ...]
@@ -21,8 +21,6 @@ For Git
       git commit -m "comment"
       git push
       git pull
-
-
 
 
 Postgres gui

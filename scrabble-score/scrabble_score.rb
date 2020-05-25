@@ -42,11 +42,11 @@ class Scrabble
           'q' => 10,
           'z' => 10}
 
-        if @word.match('!')
+        if @word !~ /A-Za-z/
           return 0
         else
-          count = @word.downcase.split('')
-          count.reduce(accum, score) {|value, scores| }
+          # count = @word.downcase.split('')
+          # count.reduce(accum, score) {|value, scores| }
         end
     end
 end
