@@ -1,28 +1,21 @@
-#longest sentence finder
+#Preferences
 
+prefs = {'deepRock' => {'chris' => 'discord', 'graham' => 'email'},
+          'tf2' => {'chris' => 'email', 'graham' => 'discord'},
+          'reflex' => {'chris' => 'discord', 'graham' => 'discord'}}
 
-class Sentence
-    def self.grab
-      text = []
-      p 'Input first sentence:'
-      text << gets.chomp.to_s
-        # p "this is #{text}"
-      p 'Input second sentence:'
-      text << gets.chomp.to_s
-        # p "this is #{text}"
-      Sentence.longest(text)
+prefsMore = {'deepRock' => {'chris' => 'email', 'graham' => 'discord'},
+              'bf4' => {'chris' => 'discord', 'graham' => 'email'}}
+
+class Preferences
+  def self.prefers(arg)
+    p arg
+    arg.each do |key, value|
+      value.each do |key2, value2|
+        p key2
+        p value2
+      end
     end
-    def self.longest(array)
-      array.reduce {|accum, insideStuff|
-        if accum.length < insideStuff.length
-          accum = insideStuff
-        else
-          p "This is the longest sentence: #{accum}"
-        end
-      }
-    end
+  end
 end
-
-Sentence.grab
-# array = ['niggers are the cause of a great deal of suffering', 'fat, entitled bitches are only fit for beating']
-# Sentence.longest(array)
+Preferences.prefers(prefs)

@@ -1,6 +1,37 @@
+
+
+For Exercism
+    exercism submit /path/to/file [/path/to/file2 ...]
+    exercism download --exercise=two-fer --track=ruby
+
+To start Ubuntu or Windows command line in project directory
+  Shift + right click and select run X here
+
+Ubuntu subsystem and Windows files
+  For example, to access a file stored
+  at C:\Users\Chris\Downloads\File.txt, you’d use the
+  path /mnt/c/Users/Chris/Downloads/File.txt in the Bash environment.
+  And yes, it’s case-sensitive, so you need “Downloads” and
+  not “downloads.”
+
+For Git
+    https://github.com/JackShackleton/Exercism.git
+
+      git add .
+      git commit -m "comment"
+      git push
+      git pull
+
+
+
+
 Postgres gui
 mvc research
 
+git add .
+git commit -m "comment"
+git push
+git pull
 
  https://us04web.zoom.us/j/74415897693?ped=K2NUllCaWVwY1HjYTBUb2FhM3UvQT09
 Clear irb
@@ -51,6 +82,7 @@ Array commands
     a = %w(first string, second string, third string) #array of strings
   Access arrays
     a[2] #access value, where number is address
+    a[2][1] #access value in nested array
     a.index['carrot'] #returns index, number where value us located
     a.length #how many elements are in array (not how many characters!)
     a.first(2) #access first element in array, argument may be given for first two, etc
@@ -85,7 +117,7 @@ Hash commands
     h['Greeting'] = 'Hello' #Create new or add single item to existing hash
     def self.hashMethod (stringArg, hashArg={}) #defines an empty hash argument
   Access hash
-    h['one'] #accesses value at hash 'one'
+    h['one'] #accesses value at hash-key 'one'
   Modify hash
     h['greeting'] = 'hello' #Add single item to existing hash
     h.delete('greeting')

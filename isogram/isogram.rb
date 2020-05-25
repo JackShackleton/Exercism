@@ -11,8 +11,11 @@
 # Determine if a word or phrase is an isogram.
 class Isogram
     def self.isogram?(string)
-        string.split
-        p string
+        if string == ''
+          true
+        elsif
+          true
+        end
     end
 end
 
