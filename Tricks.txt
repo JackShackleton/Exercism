@@ -13,7 +13,10 @@ To start Ubuntu or Windows command line in project directory
 To launch Ubuntu GUI
   export DISPLAY=:0
   export LIBGL_ALWAYS_INDIRECT=1
+<<<<<<< HEAD
   open up
+=======
+>>>>>>> d4078882f1a4175a6ae9e1104d5947320db55ed3
   startlxde
 
 Ubuntu subsystem and Windows files
