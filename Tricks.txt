@@ -3,9 +3,18 @@
 For Exercism
     exercism submit /path/to/file [/path/to/file2 ...]
     exercism download --exercise=two-fer --track=ruby
+Configure Exercism
+    exercism configure --workspace="/mnt/c/users/chris/onedrive/Code Training/exercism/ruby"
+    /mnt/c/users/chris/onedrive/Code Training/exercism
 
 To start Ubuntu or Windows command line in project directory
   Shift + right click and select run X here
+
+To launch Ubuntu GUI
+  export DISPLAY=:0
+  export LIBGL_ALWAYS_INDIRECT=1
+  open up
+  startlxde
 
 Ubuntu subsystem and Windows files
   For example, to access a file stored
@@ -44,7 +53,7 @@ to_i converts to integer
 to_s converts to string
 integer.scan /\d/ converts integer to array
 
-In cases where index is 0, 1, 2, 3 there is no need to use a hash, simply use and array as (salt, suger, butter)
+In cases where index is 0, 1, 2, 3 there is no need to use a hash, simply use and array as (salt, sugar, butter)
 can be called with 0 10 20
 
 system 'cls'
@@ -71,6 +80,7 @@ String, int, symbol commands
     'thirty two'.to_sym #does not work with int
     s = s + 'is awesome' #'Concatinates' the strings
     p 'This is awesome' * 9 #Prints the string 9 times
+    match?(/[ \t\r\n\f\v]/) #match a regular expression (regex)
 
 Array commands
   New array methods
